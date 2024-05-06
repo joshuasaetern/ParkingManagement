@@ -1,0 +1,33 @@
+﻿<Window x:Class="ParkingManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkingManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="356" Margin="43,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+        <Rectangle HorizontalAlignment="Left" Height="356" Margin="400,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+        <Label Content="Vehicles&#xD;&#xA;" HorizontalAlignment="Left" Margin="488,36,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <ComboBox x:Name="comboBoxVehicles" HorizontalAlignment="Left" Margin="443,78,0,0" VerticalAlignment="Top" Width="164" Height="16" SelectionChanged="comboBoxVehicles_SelectionChanged"/>
+        <RichTextBox Margin="429,117,180,65">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="richTxtBoxVehicles" Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Register" HorizontalAlignment="Left" Margin="131,41,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Make" HorizontalAlignment="Left" Margin="61,86,0,0" VerticalAlignment="Top" Height="52"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="58,138,0,0" VerticalAlignment="Top" Height="55"/>
+        <Label Content="Year" HorizontalAlignment="Left" Margin="64,193,0,0" VerticalAlignment="Top" Height="52"/>
+        <Label Content="License" HorizontalAlignment="Left" Margin="58,245,0,0" VerticalAlignment="Top" Height="53"/>
+        <TextBox x:Name="txtBoxMake" HorizontalAlignment="Left" Margin="131,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBoxModel" HorizontalAlignment="Left" Margin="131,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBoxYear" HorizontalAlignment="Left" Margin="131,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBoxLicense" HorizontalAlignment="Left" Margin="131,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="148,313,0,0" VerticalAlignment="Top" Click="btnRegister_Click"/>
+
+    </Grid>
+</Window>
